@@ -1,0 +1,82 @@
+@mixin button_std {
+    position: relative;
+    right: -200px;
+    height: 50px;
+    text-align: left;
+    border-style: none;
+    padding: 0px;
+    display: inline-flex;
+    width: 250px;
+    transition: right 1250ms;
+}
+
+@mixin image_size {
+    width:50px;
+    height:50px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgrey;
+}
+
+.media-container{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    :hover{
+        right: 0px;
+    }
+    
+    &--blog{
+        @include button_std();
+        background-color: #CC5E67;
+    }
+    &--twitter{
+        @include button_std();
+        background-color: #50ABF1;
+    }
+    &--linkedin{
+        @include button_std();
+        background-color: #4875B4;
+    }
+    &--facebook{
+        @include button_std();
+        background-color: #1B5EAD;
+    }
+    &--github{
+        @include button_std();
+        background-color: #000;
+    }
+    &--blog img{
+        @include image_size();
+    }
+    &--twitter img{
+        @include image_size();
+    }
+
+    &--facebook img{
+        @include image_size();
+    }
+
+    &--linkedin img{
+        @include image_size();
+        text-align: center;
+    }
+    &--github img{
+        @include image_size();
+        text-align: center;
+    }
+    &__link{
+        align-self: center;
+        font: 15px sans-serif;
+        padding-left: 20px;
+        color:#fff;
+    }
+}

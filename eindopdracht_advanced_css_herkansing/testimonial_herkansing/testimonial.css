@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato");
+body {
+  background-color: #c3cfe2;
+}
+
+.testimonial {
+  height: 100%;
+  font-family: Lato;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 15px 0px #666;
+}
+.testimonial__text {
+  height: 225px;
+  padding: 50px;
+  text-align: left;
+  font-size: x-large;
+  font-weight: 500;
+  color: darkslategrey;
+  line-height: 30px;
+}
+.testimonial__image {
+  background-color: #686de0;
+}
+.testimonial__image img {
+  border-radius: 50%;
+  border: #fff solid 6px;
+  margin-top: -80px;
+}
+.testimonial__footer {
+  background-color: #686de0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.testimonial__footer--naam {
+  letter-spacing: 2px;
+  font-size: larger;
+  font-weight: 500;
+  color: #fff;
+}
+.testimonial__footer--website a {
+  font-size: larger;
+  text-decoration: none;
+  color: #c3cfe2;
+}/*# sourceMappingURL=testimonial.css.map */
